@@ -1,2 +1,12 @@
 <p>{{monsterName}}</p>
+<button type="button" [disabled]="!monsterName" (click)="generatePower()">Generate Power</button>
+
+<p *ngIf="monsterPower">{{ monsterName }} has a power of {{ monsterSelected.monsterPower }}</p>
+<br>
+<p>All monsters</p>
+<ul>
+  <li>
+    
+  </li>
+</ul>
 
